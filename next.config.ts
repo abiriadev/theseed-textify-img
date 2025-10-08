@@ -5,11 +5,9 @@ const nextConfig: NextConfig = {
 	// We keep defaults; App Router uses static rendering by default when possible.
 	// For fully static export (SSG-only hosting), you can enable the following:
 	// output: 'export',
-	experimental: {
-		turbo: {
-			resolveAlias: {
-				'@/*': ['./src/*'],
-			},
+	turbopack: {
+		resolveAlias: {
+			'@/*': ['./src/*'],
 		},
 	},
 }
