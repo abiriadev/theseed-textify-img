@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	color-scheme: dark;
+}
+
+/* Selection and scrollbars for polish */
+::selection {
+	background: #0ea5e9;
+	color: white;
+}
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+::-webkit-scrollbar-thumb {
+	background: #0b1220;
+	border: 2px solid #111827;
+	border-radius: 999px;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	font-feature-settings:
+		'liga' 1,
+		'kern' 1;
+}
