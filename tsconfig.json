@@ -11,8 +11,23 @@
 		"skipLibCheck": true,
 		"paths": {
 			"@/*": ["./src/*"]
-		}
+		},
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
 	},
-	"include": ["next-env.d.ts", "app/**/*", "src/**/*", "**/*.ts", "**/*.tsx"],
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"app/**/*",
+		"next-env.d.ts",
+		"src/**/*",
+		".next/types/**/*.ts"
+	],
 	"exclude": ["node_modules"]
 }
